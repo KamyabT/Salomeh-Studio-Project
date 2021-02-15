@@ -1,0 +1,461 @@
+$bg-primaryColor: #7f7f7f;
+$bg-scondaryColor: #115563;
+$bg-thirdColor: #575656;
+
+
+$txt-primaryColor: #ffffff;
+
+
+
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: OpenSans-ExtraBold;
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSans-SemiBold;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+/*********************All******************/
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: $txt-primaryColor;
+}
+
+
+/***********************fixedMenuDesign**********************/
+
+
+body{
+    header.headerMainDesign {
+        background-color: $bg-thirdColor;
+            .headerLogoAndSocial {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 25px 25px 20px 25px;
+                .mainPageLogo img{
+                    width: 200px;
+                }
+                .rightIcons {
+                    a img {
+                        width: 45px;
+                    }
+                    .mobileMenu {
+                        display: none;
+                    }
+                }
+            }
+            .rightSectionHeader {
+                display: flex;
+                align-items: center;
+                nav.navbarMainDesign {
+                    margin-right: 35px;
+                    .navbarUlDesgin {
+                        display: flex;
+                        list-style: none;
+                        li {
+                            padding: 0px 10px;
+                            font-family: "OpenSans-SemiBold";
+                        }
+                        li:last-child {
+                            margin-right: 10px;
+                        }
+                        li.mobileLanguageItem {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .tagLineSection {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $bg-scondaryColor;
+                padding: 5px 25px 5px 25px;
+                .tagLineText {
+                    display: flex;
+                    justify-content: center;
+                    color: $txt-primaryColor;
+                    font-family: "OpenSans-SemiBold";
+                    h3 {
+                        font-size: 13px;
+                    }
+                }
+                .languageSectionDesign {
+                    display: flex;
+                    list-style: none;
+                    li {
+                        padding: 0 5px;
+                        font-family: "OpenSans-Regular";
+                        color: $txt-primaryColor;
+                    }
+                }
+            }
+        }
+    main.mainContentDesign {
+        width: 100%;
+        min-height: calc(100% - 208px);
+        background-image: url("../images/home-1\ -\ item.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &.home2 {
+        header.headerMainDesign{
+            background-color: $bg-thirdColor;
+            .headerLogoAndSocial {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 25px 5px 25px;
+                .mainPageLogo img{
+                    width: 200px;
+                }
+                .rightIcons {
+                    .mobileMenu {
+                        display: none;
+                    }
+                }
+                .rightSectionHeader {
+                    nav.navbarMainDesign {
+                        position: fixed;
+                        height: 100vh;
+                        width: 200px;
+                        left: 0px;
+                        top: 188px;
+                        background-color: $bg-primaryColor;
+                        padding: 15px 25px 15px 25px;
+                        .navbarUlDesgin {
+                            display: flex;
+                            flex-direction: column;
+                            list-style: none;
+                            color: white;
+                            & li {
+                                padding: 10px 0;
+                                font-family: "OpenSans-Regular";
+                            }
+                        }
+                    }
+                }
+            }
+            .tagLineSection {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $bg-scondaryColor;
+                padding: 5px 25px 5px 25px;
+                .languageSectionDesign {
+                    list-style: none;
+                    display: flex;
+                    color: $txt-primaryColor;
+                    font-family: "OpenSans-Light";
+                    li {
+                        padding: 5px 5px;
+                    }
+                }
+                .tagLineText {
+                    display: flex;
+                    justify-content: center;
+                    color: $txt-primaryColor;
+                    font-family: "OpenSans-SemiBold";
+                }
+            }
+            nav.navbarMainDesign {
+                position: fixed;
+                height: 100vh;
+                width: 200px;
+                background-color: $bg-primaryColor;
+                padding: 15px 25px 15px 25px;
+                .navbarUlDesgin {
+                    list-style: none;
+                    color: white;
+                    & li {
+                        padding: 10px 0;
+                        font-family: "OpenSans-Regular";
+                    }
+                }
+            }
+        }
+        .MainContentDesign {
+            display: flex;
+            position: relative;
+            left: 200px;
+            width: calc(100% - 200px);
+            // height: calc(100% - 188px);
+            .mainPicturesSectionDesign {
+                display: flex;
+                width: 100%;
+                img {
+                    flex-grow: 1;
+                    width: 100%;
+                    border-right: 25px solid $bg-primaryColor;
+                }
+            }
+            // .ContentItem1{
+            //     background-image: url(../images/item1.jpg);
+            //     width: calc(100% / 2);
+            //     height: 100%;
+            //     background-size: cover;
+            //     background-repeat: no-repeat;
+            //     border-right: 25px solid $bg-primaryColor;
+                
+            // }
+            // .ContentItem2 {
+            //     background-image: url(../images/item2.jpg);
+            //     width: calc(100% / 2);
+            //     background-repeat: no-repeat;
+            //     background-size: cover;
+            //     border-right: 25px solid $bg-primaryColor;
+            // }
+        }  
+    }
+    &.aboutPageDesign {
+        header.headerMainDesign {
+            background-color: $bg-thirdColor;
+                .headerLogoAndSocial {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 25px 25px 20px 25px;
+                    .mainPageLogo img{
+                        width: 200px;
+                    }
+                    .rightIcons {
+                        .mobileMenu {
+                            display: none;
+                        }
+                    }
+                }
+                .rightSectionHeader {
+                    display: flex;
+                    align-items: center;
+                    nav.navbarMainDesign {
+                        margin-right: 35px;
+                        .navbarUlDesgin {
+                            display: flex;
+                            list-style: none;
+                            li {
+                                padding: 0px 10px;
+                                font-family: "OpenSans-SemiBold";
+                            }
+                            li:last-child {
+                                margin-right: 10px;
+                            }
+                            li.mobileLanguageItem {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .tagLineSection {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: $bg-scondaryColor;
+                    padding: 5px 25px 5px 25px;
+                    .tagLineText {
+                        display: flex;
+                        justify-content: center;
+                        color: $txt-primaryColor;
+                        font-family: "OpenSans-SemiBold";
+                    }
+                    .languageSectionDesign {
+                        display: flex;
+                        list-style: none;
+                        li {
+                            padding: 0 5px;
+                            font-family: "OpenSans-Regular";
+                            color: $txt-primaryColor;
+                        }
+                    }
+                }
+            }
+        main.mainContentDesign {
+            width: 100%;
+            min-height: calc(100% - 238px);
+            padding: 25px 25px ;
+            background-image: none;
+            background-color: $bg-primaryColor;
+            .contentsItems {
+
+                p {
+                    // width: 50%;
+                    color: $txt-primaryColor;
+                    font-family: "OpenSans-Regular";
+                    // float: left;
+                }
+                img {
+                    float: right;
+                    max-width: 400px;
+                    margin-left: 20px;
+                }
+            }
+        }
+        .mobileFooterDesign {
+            display: block;
+            background-color: $bg-scondaryColor;
+            padding : 5px 0px;
+            border-top: 10px solid $bg-primaryColor;
+            border-bottom: 10px solid $bg-primaryColor;
+        }
+    }
+    &.contactPage {
+        header.headerMainDesign {
+            background-color: $bg-thirdColor;
+                .headerLogoAndSocial {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 25px 25px 20px 25px;
+                    .mainPageLogo img{
+                        width: 200px;
+                    }
+                    .rightIcons {
+                        .mobileMenu {
+                            display: none;
+                        }
+                    }
+                }
+                .rightSectionHeader {
+                    display: flex;
+                    align-items: center;
+                    nav.navbarMainDesign {
+                        margin-right: 35px;
+                        .navbarUlDesgin {
+                            display: flex;
+                            list-style: none;
+                            li {
+                                padding: 0px 10px;
+                                font-family: "OpenSans-SemiBold";
+                            }
+                            li:last-child {
+                                margin-right: 10px;
+                            }
+                            li.mobileLanguageItem {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .tagLineSection {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: $bg-scondaryColor;
+                    padding: 5px 25px 5px 25px;
+                    .tagLineText {
+                        display: flex;
+                        justify-content: center;
+                        color: $txt-primaryColor;
+                        font-family: "OpenSans-SemiBold";
+                    }
+                    .languageSectionDesign {
+                        display: flex;
+                        list-style: none;
+                        li {
+                            padding: 0 5px;
+                            font-family: "OpenSans-Regular";
+                            color: $txt-primaryColor;
+                        }
+                    }
+                }
+            }
+        main.mainContentDesign {
+            width: 100%;
+            min-height: calc(100% - 282px);
+            padding: 25px 25px;
+            background-image: none;
+            background-color: $bg-primaryColor;
+            .contentsItems {
+                display: flex;
+                .contactDetailContainer {
+                    flex-basis: 50%;
+                    font-family: "OpenSans-Regular";
+                    h2:not(.addressParagraphHeading) {
+                        padding-top: 20px;
+                    }
+                    h2 {
+                        font-size: 24px;
+                        font-family: "OpenSans-SemiBold";
+                    }
+                    p {
+                        color: $txt-primaryColor;
+                        font-size: 20px;
+                    }
+                }
+                .mapContainer {
+                    flex-basis: 50%;
+                    margin-top: 25px;
+                }
+            }
+        }
+        .mobileFooterDesign {
+            display: block;
+            background-color: $bg-scondaryColor;
+            padding : 5px 0px;
+            border-top: 10px solid $bg-primaryColor;
+            border-bottom: 10px solid $bg-primaryColor;
+            .footerItemsSetion {
+               padding-right: 25px;
+               padding-left: 25px;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+                .copyRightTextDesign {
+                    font-family: "OpenSans-Regular";
+                    color: $txt-primaryColor;
+                }
+                .socialIconsFooterDesgin {
+                    
+                    a {
+                        padding: 0 10px;
+                        img {
+                            width: 40px;
+                        }
+                    }
+                    a.footerFacebook img {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

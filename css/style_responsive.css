@@ -1,0 +1,496 @@
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-ExtraBold;
+  src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Light;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-SemiBold;
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+/**********************All Use Class**********************/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/********************Home 1 responsive********************/
+@media (max-width: 920px) {
+  body header.headerMainDesign {
+    background-color: #575656;
+  }
+  body header.headerMainDesign .headerLogoAndSocial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 15px;
+  }
+  body header.headerMainDesign .headerLogoAndSocial .mainPageLogo a img {
+    width: 150px !important;
+  }
+  body header.headerMainDesign .headerLogoAndSocial .rightSectionHeader nav.navbarMainDesign {
+    display: none;
+  }
+  body header.headerMainDesign .headerLogoAndSocial .rightSectionHeader nav.navbarMainDesign.open {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    top: 142px;
+    height: 134px;
+    padding: 0;
+    z-index: 111;
+  }
+  body header.headerMainDesign .headerLogoAndSocial .rightSectionHeader nav.navbarMainDesign.open .navbarUlDesgin {
+    display: block;
+    text-align: center;
+    list-style: none;
+    background-color: #115563;
+  }
+  body header.headerMainDesign .headerLogoAndSocial .rightSectionHeader nav.navbarMainDesign.open .navbarUlDesgin li {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-top: 2px solid #ffffff;
+    font-size: "OpenSans-SemiBold";
+  }
+  body header.headerMainDesign .headerLogoAndSocial .rightSectionHeader nav.navbarMainDesign.open .navbarUlDesgin li:last-child {
+    border-bottom: 2px solid #ffffff;
+    margin-right: 0;
+  }
+  body header.headerMainDesign .headerLogoAndSocial .rightSectionHeader nav.navbarMainDesign.open .navbarUlDesgin li.mobileLanguageItem {
+    display: block;
+  }
+  body header.headerMainDesign .headerLogoAndSocial .rightIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body header.headerMainDesign .headerLogoAndSocial .rightIcons a {
+    margin-right: 10px;
+  }
+  body header.headerMainDesign .headerLogoAndSocial .rightIcons a img {
+    width: 30px;
+    padding-top: 3px;
+  }
+  body header.headerMainDesign .headerLogoAndSocial .rightIcons .mobileMenu {
+    display: block;
+    font-size: 32px;
+    color: #ffffff;
+  }
+  body header.headerMainDesign .tagLineSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #115563;
+  }
+  body header.headerMainDesign .tagLineSection .tagLineText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #ffffff;
+    font-family: "OpenSans-SemiBold";
+  }
+  body header.headerMainDesign .tagLineSection .tagLineText h3 {
+    font-size: 13px;
+    padding: 5px 2px;
+  }
+  body header.headerMainDesign .tagLineSection .languageSectionDesign {
+    display: none;
+  }
+  body main.mainContentDesign {
+    width: 100%;
+    min-height: calc(100% - 100px);
+    background-image: url("../images/home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body main.mainContentDesign img {
+    width: 100%;
+  }
+  body .mobileFooterDesign {
+    display: block;
+    background-color: #115563;
+    padding: 5px 0px;
+    border-top: 10px solid #7f7f7f;
+    border-bottom: 10px solid #7f7f7f;
+  }
+  body.home2 header.headerMainDesign {
+    background-color: #575656;
+  }
+  body.home2 header.headerMainDesign .headerLogoAndSocial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px 25px 0px 25px;
+  }
+  body.home2 header.headerMainDesign .headerLogoAndSocial .rightIcons .mobileMenu {
+    display: block;
+  }
+  body.home2 header.headerMainDesign .headerLogoAndSocial .rightSectionHeader nav.navbarMainDesign {
+    display: none;
+  }
+  body.home2 header.headerMainDesign .headerLogoAndSocial .rightSectionHeader nav.navbarMainDesign.open {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 142px;
+    width: 100%;
+    background-color: #7f7f7f;
+  }
+  body.home2 header.headerMainDesign .headerLogoAndSocial .rightSectionHeader nav.navbarMainDesign .navbarUlDesgin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none;
+    color: white;
+  }
+  body.home2 header.headerMainDesign .headerLogoAndSocial .rightSectionHeader nav.navbarMainDesign .navbarUlDesgin li {
+    padding: 10px 0;
+    font-family: "OpenSans-Regular";
+  }
+  body.home2 header.headerMainDesign .headerLogoAndSocial .rightSectionHeader nav.navbarMainDesign .navbarUlDesgin li.mobileLanguageItem {
+    display: block;
+  }
+  body.home2 header.headerMainDesign .tagLineSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #115563;
+  }
+  body.home2 header.headerMainDesign .tagLineSection .languageSectionDesign {
+    display: none;
+  }
+  body.home2 header.headerMainDesign .tagLineSection .tagLineText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #ffffff;
+    font-family: "OpenSans-SemiBold";
+  }
+  body.home2 .MainContentDesign {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+  body.aboutPageDesign header.headerMainDesign {
+    background-color: #575656;
+  }
+  body.aboutPageDesign header.headerMainDesign .headerLogoAndSocial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 25px 25px 20px 25px;
+  }
+  body.aboutPageDesign header.headerMainDesign .headerLogoAndSocial .rightIcons .mobileMenu {
+    display: block;
+  }
+  body.aboutPageDesign header.headerMainDesign .rightSectionHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body.aboutPageDesign header.headerMainDesign .rightSectionHeader nav.navbarMainDesign {
+    display: none;
+  }
+  body.aboutPageDesign header.headerMainDesign .rightSectionHeader nav.navbarMainDesign.open {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 142px;
+    width: 100%;
+    background-color: #7f7f7f;
+  }
+  body.aboutPageDesign header.headerMainDesign .rightSectionHeader nav.navbarMainDesign .navbarUlDesgin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+  }
+  body.aboutPageDesign header.headerMainDesign .rightSectionHeader nav.navbarMainDesign .navbarUlDesgin li {
+    padding: 0px 10px;
+    font-family: "OpenSans-SemiBold";
+  }
+  body.aboutPageDesign header.headerMainDesign .rightSectionHeader nav.navbarMainDesign .navbarUlDesgin li:last-child {
+    margin-right: 10px;
+  }
+  body.aboutPageDesign header.headerMainDesign .rightSectionHeader nav.navbarMainDesign .navbarUlDesgin li.mobileLanguageItem {
+    display: none;
+  }
+  body.aboutPageDesign header.headerMainDesign .tagLineSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #115563;
+  }
+  body.aboutPageDesign header.headerMainDesign .tagLineSection .tagLineText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #ffffff;
+    font-family: "OpenSans-SemiBold";
+  }
+  body.aboutPageDesign header.headerMainDesign .tagLineSection .languageSectionDesign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+  }
+  body.aboutPageDesign header.headerMainDesign .tagLineSection .languageSectionDesign li {
+    padding: 0 5px;
+    font-family: "OpenSans-Regular";
+    color: #ffffff;
+  }
+  body.aboutPageDesign header.headerMainDesign .tagLineSection .languageSectionDesign {
+    display: none;
+  }
+  body.aboutPageDesign main.mainContentDesign {
+    width: 100%;
+    min-height: calc(100% - 179px);
+  }
+  body.aboutPageDesign main.mainContentDesign .contentsItems p {
+    color: #ffffff;
+    font-family: "OpenSans-Regular";
+  }
+  body.aboutPageDesign main.mainContentDesign .contentsItems img {
+    float: right;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  body.aboutPageDesign .mobileFooterDesign {
+    display: block;
+    background-color: #115563;
+    padding: 5px 0px;
+    border-top: 10px solid #7f7f7f;
+    border-bottom: 10px solid #7f7f7f;
+  }
+  body.contactPage header.headerMainDesign {
+    background-color: #575656;
+  }
+  body.contactPage header.headerMainDesign .headerLogoAndSocial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 25px 25px 20px 25px;
+  }
+  body.contactPage header.headerMainDesign .headerLogoAndSocial .rightIcons .mobileMenu {
+    display: block;
+  }
+  body.contactPage header.headerMainDesign .rightSectionHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body.contactPage header.headerMainDesign .rightSectionHeader nav.navbarMainDesign {
+    display: none;
+  }
+  body.contactPage header.headerMainDesign .rightSectionHeader nav.navbarMainDesign.open {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 129px;
+    width: 100%;
+    background-color: #7f7f7f;
+  }
+  body.contactPage header.headerMainDesign .rightSectionHeader nav.navbarMainDesign .navbarUlDesgin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+  }
+  body.contactPage header.headerMainDesign .rightSectionHeader nav.navbarMainDesign .navbarUlDesgin li {
+    padding: 0px 10px;
+    font-family: "OpenSans-SemiBold";
+  }
+  body.contactPage header.headerMainDesign .rightSectionHeader nav.navbarMainDesign .navbarUlDesgin li:last-child {
+    margin-right: 10px;
+  }
+  body.contactPage header.headerMainDesign .rightSectionHeader nav.navbarMainDesign .navbarUlDesgin li.mobileLanguageItem {
+    display: none;
+  }
+  body.contactPage header.headerMainDesign .tagLineSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #115563;
+  }
+  body.contactPage header.headerMainDesign .tagLineSection .tagLineText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #ffffff;
+    font-family: "OpenSans-SemiBold";
+  }
+  body.contactPage header.headerMainDesign .tagLineSection .languageSectionDesign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+  }
+  body.contactPage header.headerMainDesign .tagLineSection .languageSectionDesign li {
+    padding: 0 5px;
+    font-family: "OpenSans-Regular";
+    color: #ffffff;
+  }
+  body.contactPage header.headerMainDesign .tagLineSection .languageSectionDesign {
+    display: none;
+  }
+  body.contactPage main.mainContentDesign {
+    width: 100%;
+    min-height: calc(100% - 230px);
+    background-image: none;
+    background-color: #7f7f7f;
+  }
+  body.contactPage main.mainContentDesign .contentsItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body.contactPage main.mainContentDesign .contentsItems .contactDetailContainer {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    font-family: "OpenSans-Regular";
+  }
+  body.contactPage main.mainContentDesign .contentsItems .contactDetailContainer h2:not(.addressParagraphHeading) {
+    padding-top: 20px;
+  }
+  body.contactPage main.mainContentDesign .contentsItems .contactDetailContainer h2 {
+    font-size: 24px;
+    font-family: "OpenSans-SemiBold";
+  }
+  body.contactPage main.mainContentDesign .contentsItems .contactDetailContainer p {
+    color: #ffffff;
+    font-size: 18px;
+  }
+  body.contactPage main.mainContentDesign .contentsItems .mapContainer {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-top: 25px;
+  }
+  body.contactPage .mobileFooterDesign {
+    display: block;
+    background-color: #115563;
+    padding: 5px 0px;
+    border-top: 10px solid #7f7f7f;
+    border-bottom: 10px solid #7f7f7f;
+  }
+  body.contactPage .mobileFooterDesign .footerItemsSetion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body.contactPage .mobileFooterDesign .footerItemsSetion .copyRightTextDesign {
+    text-align: center;
+  }
+  body.contactPage .mobileFooterDesign .footerItemsSetion .socialIconsFooterDesgin {
+    margin-top: 15px;
+  }
+}
+
+@media (orientation: portrait) {
+  body.home2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body.home2 .MainContentDesign .mainPicturesSectionDesign img {
+    border-right-width: 0 !important;
+  }
+  body.home2 .MainContentDesign .mainPicturesSectionDesign img:first-child {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style_responsive.css.map */

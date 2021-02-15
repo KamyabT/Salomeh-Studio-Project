@@ -1,0 +1,470 @@
+$bg-primaryColor: #7f7f7f;
+$bg-scondaryColor: #115563;
+$bg-thirdColor: #575656;
+
+
+$txt-primaryColor: #ffffff;
+
+
+
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: OpenSans-ExtraBold;
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSans-SemiBold;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+
+
+/**********************All Use Class**********************/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/********************Home 1 responsive********************/
+
+
+
+@media (max-width: 920px){
+    body{
+        header.headerMainDesign {
+            background-color: $bg-thirdColor;
+                .headerLogoAndSocial {
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 15px;
+                    .mainPageLogo a img {
+                        width: 150px !important;
+                    }
+                    .rightSectionHeader {
+                        nav.navbarMainDesign {
+                            display: none;
+                            &.open {
+                                position: absolute;
+                                left: 0;
+                                display: block;
+                                width: 100%;
+                                top: 142px;
+                                height: 134px;
+                                padding: 0;
+                                z-index: 111;
+                                    .navbarUlDesgin {
+                                    display: block;
+                                    text-align: center;
+                                    list-style: none;
+                                    background-color: $bg-scondaryColor;
+                                    li {
+                                        padding-top: 7px;
+                                        padding-bottom: 7px;
+                                        border-top: 2px solid $txt-primaryColor;
+                                        font-size: "OpenSans-SemiBold";
+                                    }
+                                    li:last-child {
+                                        border-bottom: 2px solid $txt-primaryColor;
+                                        margin-right: 0;
+                                    }
+                                    li.mobileLanguageItem {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .rightIcons {
+                        display: flex;
+                        align-items: center;
+                        a {
+                            margin-right: 10px;
+                            img {
+                                width: 30px;
+                                padding-top: 3px;
+                            }
+                        } 
+                        .mobileMenu {
+                            display: block;
+                            font-size: 32px;
+                            color: $txt-primaryColor;
+                        }
+                    }
+                }
+                .tagLineSection {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $bg-scondaryColor;
+                    // padding: 5px 25px 5px 25px;
+                    .tagLineText {
+                        display: flex;
+                        justify-content: center;
+                        color: $txt-primaryColor;
+                        font-family: "OpenSans-SemiBold";
+                        h3 {
+                            font-size: 13px;
+                            padding: 5px 2px;
+                        }
+                    }
+                    .languageSectionDesign {
+                        display: none;
+                    }
+                }
+            }
+        main.mainContentDesign {
+            width: 100%;
+            min-height: calc(100% - 100px);
+            background-image: url("../images/home-mobile.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            img {
+                width: 100%;
+            }
+        }
+        .mobileFooterDesign {
+            display: block;
+            background-color: $bg-scondaryColor;
+            padding : 5px 0px;
+            border-top: 10px solid $bg-primaryColor;
+            border-bottom: 10px solid $bg-primaryColor;
+        }
+        &.home2 {
+            header.headerMainDesign{
+                background-color: $bg-thirdColor;
+                .headerLogoAndSocial {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px 25px 0px 25px;
+                    .rightIcons {
+                        .mobileMenu {
+                            display: block;
+                        }
+                    }
+                    .rightSectionHeader {
+                        nav.navbarMainDesign {
+                            display: none;
+                            &.open {
+                                display: block;
+                                position: absolute;
+                                left: 0px;
+                                top: 142px;
+                                width: 100%;
+                                background-color: $bg-primaryColor;
+                            }
+                            .navbarUlDesgin {
+                                display: flex;
+                                flex-direction: column;
+                                list-style: none;
+                                color: white;
+                                & li {
+                                    padding: 10px 0;
+                                    font-family: "OpenSans-Regular";
+                                }
+                                li.mobileLanguageItem {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tagLineSection {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $bg-scondaryColor;
+                    // padding: 5px 25px 5px 25px;
+                    .languageSectionDesign {
+                        display: none;
+                    }
+                    .tagLineText {
+                        display: flex;
+                        justify-content: center;
+                        color: $txt-primaryColor;
+                        font-family: "OpenSans-SemiBold";
+                    }
+                }
+            }
+            .MainContentDesign {
+                display: block;
+                position: static;
+                width: 100%;
+                // height: calc(100% - 124px);
+                // .mainPicturesSectionDesign {
+                //     img {
+                //         border: none;
+                //     }
+                //     img:last-child {
+                //         display: none;
+                //     }
+                // }
+                // .ContentItem1{
+                //     background-image: url(../images/item1.jpg);
+                //     width: 100%;
+                //     height: 100%;
+                //     background-size: cover;
+                //     background-repeat: no-repeat;
+                //     border-right: none;
+                // }
+                // .ContentItem2 {
+                //     display: none;
+                // }
+            }  
+        }
+        &.aboutPageDesign {
+            header.headerMainDesign {
+                background-color: $bg-thirdColor;
+                    .headerLogoAndSocial {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 25px 25px 20px 25px;
+                        .rightIcons {
+                            .mobileMenu {
+                                display: block;
+                            }
+                        }
+                    }
+                    .rightSectionHeader {
+                        display: flex;
+                        align-items: center;
+                        nav.navbarMainDesign {
+                            display: none;
+                            &.open {
+                                display: block;
+                                position: absolute;
+                                left: 0px;
+                                top: 142px;
+                                width: 100%;
+                                background-color: $bg-primaryColor;
+                            }
+                            .navbarUlDesgin {
+                                display: flex;
+                                list-style: none;
+                                li {
+                                    padding: 0px 10px;
+                                    font-family: "OpenSans-SemiBold";
+                                }
+                                li:last-child {
+                                    margin-right: 10px;
+                                }
+                                li.mobileLanguageItem {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    .tagLineSection {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $bg-scondaryColor;
+                        // padding: 5px 25px 5px 25px;
+                        .tagLineText {
+                            display: flex;
+                            justify-content: center;
+                            color: $txt-primaryColor;
+                            font-family: "OpenSans-SemiBold";
+                        }
+                        .languageSectionDesign {
+                            display: flex;
+                            list-style: none;
+                            li {
+                                padding: 0 5px;
+                                font-family: "OpenSans-Regular";
+                                color: $txt-primaryColor;
+                            }
+                        }
+                        .languageSectionDesign {
+                            display: none;
+                        }
+                    }
+                }
+            main.mainContentDesign {
+                width: 100%;
+                min-height: calc(100% - 179px);
+                .contentsItems {
+                    p {
+                        color: $txt-primaryColor;
+                        font-family: "OpenSans-Regular";
+                    }
+                    img {
+                        float: right;
+                        max-width: 100%;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+            .mobileFooterDesign {
+                display: block;
+                background-color: $bg-scondaryColor;
+                padding : 5px 0px;
+                border-top: 10px solid $bg-primaryColor;
+                border-bottom: 10px solid $bg-primaryColor;
+            }
+        }
+        &.contactPage {
+            header.headerMainDesign {
+                background-color: $bg-thirdColor;
+                    .headerLogoAndSocial {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 25px 25px 20px 25px;
+                        .rightIcons {
+                            .mobileMenu {
+                                display: block;
+                            }
+                        }
+                    }
+                    .rightSectionHeader {
+                        display: flex;
+                        align-items: center;
+                        nav.navbarMainDesign {
+                            display: none;
+                            &.open {
+                                display: block;
+                                position: absolute;
+                                left: 0px;
+                                top: 129px;
+                                width: 100%;
+                                background-color: $bg-primaryColor;
+                            }
+                            .navbarUlDesgin {
+                                display: flex;
+                                list-style: none;
+                                li {
+                                    padding: 0px 10px;
+                                    font-family: "OpenSans-SemiBold";
+                                }
+                                li:last-child {
+                                    margin-right: 10px;
+                                }
+                                li.mobileLanguageItem {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    .tagLineSection {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $bg-scondaryColor;
+                        // padding: 5px 25px 5px 25px;
+                        .tagLineText {
+                            display: flex;
+                            justify-content: center;
+                            color: $txt-primaryColor;
+                            font-family: "OpenSans-SemiBold";
+                        }
+                        .languageSectionDesign {
+                            display: flex;
+                            list-style: none;
+                            li {
+                                padding: 0 5px;
+                                font-family: "OpenSans-Regular";
+                                color: $txt-primaryColor;
+                            }
+                        }
+                        .languageSectionDesign {
+                            display: none;
+                        }
+                    }
+                }
+            main.mainContentDesign {
+                width: 100%;
+                min-height: calc(100% - 230px);
+                background-image: none;
+                background-color: $bg-primaryColor;
+                .contentsItems {
+                    display: flex;
+                    flex-direction: column;
+                    .contactDetailContainer {
+                        flex-basis: 50%;
+                        font-family: "OpenSans-Regular";
+                        h2:not(.addressParagraphHeading) {
+                            padding-top: 20px;
+                        }
+                        h2 {
+                            font-size: 24px;
+                            font-family: "OpenSans-SemiBold";
+                        }
+                        p {
+                            color: $txt-primaryColor;
+                            font-size: 18px;
+                        }
+                    }
+                    .mapContainer {
+                        flex-basis: 50%;
+                        margin-top: 25px;
+                    }
+                }
+            }
+            .mobileFooterDesign {
+                display: block;
+                background-color: $bg-scondaryColor;
+                padding : 5px 0px;
+                border-top: 10px solid $bg-primaryColor;
+                border-bottom: 10px solid $bg-primaryColor;
+                .footerItemsSetion {
+                    display: flex;
+                    flex-direction: column;
+                    .copyRightTextDesign {
+                        text-align: center;
+                    }
+                    .socialIconsFooterDesgin {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (orientation: portrait) {
+    body.home2 {
+      flex-direction: row;
+      .MainContentDesign {
+            .mainPicturesSectionDesign {
+                img {
+                    border-right-width: 0 !important;
+                }
+                img:first-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
